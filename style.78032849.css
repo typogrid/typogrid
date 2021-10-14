@@ -4,7 +4,8 @@ br[-none] {
 }
 
 @media screen and (max-width: 1000px) {
-  br[-none-m] {
+  br[-none-m],
+  .-none-m {
     display: none;
   }
 }
@@ -88,9 +89,9 @@ h3 span.-outline.-dark {
 
 h4 {
   margin: var(--typography-margin);
-  font-weight: 400;
+  font-weight: 300;
   font-size: calc(20px + 3vw);
-  line-height: calc(20px + 1.5vw);
+  line-height: calc(20px + 2.5vw);
 }
 
 h4 span.-outline {
@@ -127,9 +128,10 @@ h6 span.-outline.-dark {
   color: var(--primary) !important;
 }
 
-p {
+p,
+a {
   margin: var(--typography-margin);
-  font-size: 20px;
+  font-size: calc(10px + .5vw);
 }
 
 .-left {
@@ -297,9 +299,11 @@ body[grain]::after {
   z-index: 10000;
   content: "";
   position: fixed;
-  width: 200vw;
-  height: 200vh;
-  left: -50%;
+  width: 300vw;
+  height: 300vh;
+  min-width: 2000px;
+  min-height: 2000px;
+  left: -100%;
   top: -50%;
   background-image: url(/film.feb91601.png);
   opacity: .1;
@@ -521,6 +525,7 @@ body[grain]::after {
 }
 
 .c-header_button_icon.-buger {
+  margin-left: auto;
   -webkit-transition: height .3s;
   transition: height .3s;
   pointer-events: none;
@@ -560,6 +565,10 @@ body[grain]::after {
   bottom: 0px;
 }
 
+.c-typogrid-title {
+  overflow-x: hidden !important;
+}
+
 @-webkit-keyframes typogrid-waveing {
   0% {
     -webkit-transform: translateX(calc(var(--typogrid-waveing)*-1));
@@ -595,14 +604,16 @@ body[grain]::after {
   transition: 3s cubic-bezier(0.07, 0.22, 0.22, 0.97);
   position: absolute;
   margin-left: -100px;
-  top: 0;
+  top: 4vh;
   z-index: 1;
-  width: 300px;
-  height: auto;
+  width: 23vw;
+  min-width: 200px;
+  height: 25vw;
+  min-height: 200px;
 }
 
 .c-typogrid-title-english {
-  height: calc(20px + 10vw);
+  height: calc(20px + 9vw);
   pointer-events: none;
   position: relative;
 }
@@ -612,6 +623,10 @@ body[grain]::after {
 }
 
 .c-typogrid-title-english-frame {
+  width: 100%;
+  overflow-x: hidden !important;
+  min-width: 500px;
+  margin: 5vw 0;
   --typogrid-waveing: 2.5vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -656,11 +671,14 @@ body[grain]::after {
 .c-typogrid-title-chinese {
   pointer-events: none;
   position: relative;
+  height: calc(20px + 12vw);
 }
 
 .c-typogrid-title-chinese-frame {
-  height: calc(20px + 12vw);
-  margin-left: 30vw;
+  width: 100vw;
+  overflow-x: hidden !important;
+  margin: 5vw 0;
+  margin-left: 40vw;
   --typogrid-waveing: 4vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -706,9 +724,38 @@ body[grain]::after {
   z-index: 3 !important;
 }
 
+.c-hero-subfirst {
+  padding-top: 15vh;
+}
+
+.c-hero-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+  max-width: 500px;
+  margin-top: -5vw;
+  margin-bottom: 10vh;
+}
+
+.c-hero-info-en {
+  justify-self: flex-start;
+}
+
+.c-hero-info-zh {
+  margin-left: auto;
+}
+
+.c-hero-smalltext {
+  margin-bottom: 15vh;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   background-color: var(--primary);
+  overflow-x: hidden;
 }
 
 body[p-hide] {
@@ -734,13 +781,7 @@ a {
      object-fit: cover;
 }
 
-.o-section {
-  margin: 0;
-  padding: 0;
-}
-
 .o-layout {
-  margin: 0;
   max-width: 2000px;
   padding-left: var(--website-padding);
   padding-right: var(--website-padding);
