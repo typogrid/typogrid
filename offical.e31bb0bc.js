@@ -3590,7 +3590,7 @@ function isNotionID(id) {
 exports.isNotionID = isNotionID;
 exports.default = toHTMLPage;
 
-},{"slugify":"node_modules/slugify/slugify.js"}],"../Users/oldma/AppData/Roaming/npm/node_modules/parcel-bundler/node_modules/process/browser.js":[function(require,module,exports) {
+},{"slugify":"node_modules/slugify/slugify.js"}],"../../Users/oldma/AppData/Roaming/npm/node_modules/parcel-bundler/node_modules/process/browser.js":[function(require,module,exports) {
 
 // shim for using process in browser
 var process = module.exports = {}; // cached from whatever global is present so that test runners that stub it
@@ -3945,7 +3945,7 @@ class Notion {
 }
 
 exports.default = Notion;
-},{"./lib/fetch":"node_modules/notion-api-js/dist/lib/fetch.js","./lib/helpers":"node_modules/notion-api-js/dist/lib/helpers.js","process":"../Users/oldma/AppData/Roaming/npm/node_modules/parcel-bundler/node_modules/process/browser.js"}],"index.js":[function(require,module,exports) {
+},{"./lib/fetch":"node_modules/notion-api-js/dist/lib/fetch.js","./lib/helpers":"node_modules/notion-api-js/dist/lib/helpers.js","process":"../../Users/oldma/AppData/Roaming/npm/node_modules/parcel-bundler/node_modules/process/browser.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 var _locomotiveScroll = _interopRequireDefault(require("locomotive-scroll"));
@@ -4068,7 +4068,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53794" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49803" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -4245,4 +4245,4 @@ function hmrAcceptRun(bundle, id) {
   }
 }
 },{}]},{},["../../Users/oldma/AppData/Roaming/npm/node_modules/parcel-bundler/src/builtins/hmr-runtime.js","index.js"], null)
-//# sourceMappingURL=/offical.e31bb0bc.js.map
+//# sourceMappingURL=offical.e31bb0bc.js.map

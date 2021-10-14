@@ -305,7 +305,7 @@ body[grain]::after {
   min-height: 2000px;
   left: -100%;
   top: -50%;
-  background-image: url(/film.feb91601.png);
+  background-image: url(film.feb91601.png);
   opacity: .1;
   -webkit-animation: grain 0.2s steps(6) infinite;
           animation: grain 0.2s steps(6) infinite;
@@ -900,4 +900,4 @@ a {
 }
 
 
-/*# sourceMappingURL=/style.78032849.css.map */
+/*# sourceMappingURL=style.78032849.css.map */
