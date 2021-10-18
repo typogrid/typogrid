@@ -3959,13 +3959,13 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 // Loading
 var scroll = new _locomotiveScroll.default({
   el: document.querySelector('[data-scroll-container]'),
-  smooth: true // smartphone: {
-  //     smooth: true
-  // },
-  // tablet: {
-  //     smooth: true
-  // }
-
+  smooth: true,
+  smartphone: {
+    smooth: true
+  },
+  tablet: {
+    smooth: true
+  }
 });
 var test_color = document.querySelector('.test').getAttribute("test-color");
 var testa = document.querySelector('.test');
@@ -4068,7 +4068,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49803" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51289" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

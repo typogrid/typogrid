@@ -1,0 +1,22 @@
+:root {
+    --primary: rgb(20, 20, 20);
+    --secondary: rgb(255, 255, 255);
+    --tertiary: #aaa;
+    --typography-margin: 10px 0;
+    --website-padding: 3vw;
+    --margin: calc(5px + 2vw);
+    /* --h1: calc(40px + 10vw);
+    --h2: calc(50px + 5vw);
+    --h3: calc(20px + 5vw);
+    --h4: calc(15px + 3vw);
+    --h5: calc(10px + 1vw);
+    --p: calc(10px + .5vw); */
+    --h1: calc(20px + 10vw);
+    --h2: calc(20px + 5vw);
+    --h3: calc(10px + 5vw);
+    --h4: calc(10px + 3vw);
+    --h5: calc(10px + 1vw);
+    --p: calc(8px + .5vw);
+}
+
+/*# sourceMappingURL=variable.5708517c.css.map */
